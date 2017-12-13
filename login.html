@@ -1,46 +1,38 @@
-<html>
-	<body>	
-		<center>
-		<form >
-			<table border='1' cellpadding='5'cellspacing='0' width="100%" height="100%">
-			<thead>
-				<tr>
-					<th align="right"> 
-					<img src="alpha.jpg"  height="40" align="left">
-					<a href="home.html">Home</a> |
-					<a href="login.html">Login</a> |
-					<a href="registration.html">Registration</a>
-					</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td >
-					<fieldset>
-						<legend>Login</legend>
-						User Name:<input type="text" name="userName"/><br/>
-						Password:<input type="password" name="password"/><br/>
-						<hr></hr>
-						<input type="checkbox" name="rememberme"/>Remember Me<br/>
-						<input type="submit"/>
-						<a href="adminindex.html">NEXT</a>
-						<a href="forgotpassword.php">Forgot Password?</a>
-						</fieldset>
-					
-					
-					
-					</td>
-				</tr>
-				</tbody>
-				<tr >
-				<td>  
-				<center>
-				Copyright © 2017
-				</center>
-				</td> 
-				</tr>
-			</table>
-		</form>
-		</center>
-	</body>
-</html>
+
+<fieldset>
+    <legend><b>LOGIN</b></legend>
+    <form method="post" action="" target="_parent">
+        <br/>
+        <table>
+		    <tr>
+			     <td>
+				 User type:
+				 </td>
+				   <td>
+				   <select name="Usertype">
+				   <option value=0 />
+				   <option value="<a href='admin/adminindex.html'>"/>Admin
+				   <option value="<a href='admin/adminindex.html'>"/>User
+				   </select>
+				   </td>
+				  
+			</tr>
+            <tr>
+                <td>User Name</td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password"></td>
+            </tr>
+        </table>
+        <hr />
+        <input name="remember" type="checkbox">Remember Me
+        <br/><br/>
+        <input type="submit" value="Submit">
+        <a href="forgot_password.html">Forgot Password?</a>
+    </form>
+</fieldset>
+
